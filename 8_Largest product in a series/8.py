@@ -22,6 +22,18 @@ def ps(n):
         current = max(current, max(product(each[i : i + 13]) for i in range(len(each) - 13 + 1)))
         print(current)
         
+    """without list comprehension
+    for sequence in zero_split:
+        shift = len(sequence)-13 + 1
+        for i in range(shift):
+            newseq = sequence[i:13+i]
+            product = 1
+            for j in newseq:
+                product *= int(j)
+            current = max(current, product)
+            print(current)
+    """
+        
 
 if __name__ == "__main__":
     i = ''.join([line for line in fileinput.input()]).replace('\n','')
