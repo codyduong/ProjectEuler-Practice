@@ -1,9 +1,7 @@
 import math
 
 def sm(s):
-    l = []
-    for i in range(1,s+1):
-        l.append(i)
+    l = [i for i in range(1,s+1)]
 
     return math.lcm(*l)
 
