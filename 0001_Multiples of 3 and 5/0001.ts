@@ -3,10 +3,12 @@ function findMultiples(max: number){
     count = 0;
 
     let i: number;
-    for (i = 0; i<=max; i+=3) {
-        count+=i;
+    for (i = 0; i<max; i+=3) {
+        if (!(i%5 == 0)) {
+            count+=i;
+        }
     }
-    for (i = 0; i<=max; i+=5) {
+    for (i = 0; i<max; i+=5) {
         count+=i;
     }
 
