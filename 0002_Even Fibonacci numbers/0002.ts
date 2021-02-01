@@ -2,7 +2,7 @@ function evenFib(n: Number) {
     let fibNumbers = [1, 2]
 
     while (true) {
-        let f: number = fibNumbers[fibNumbers.length-1] + fibNumbers[fibNumbers.length-2]
+        let f: number = fibNumbers[fibNumbers.length-1] + fibNumbers[fibNumbers.length-2] //Pythonic negative indicing doesn't work :(
         if (f > n) {
             break
         } else {
