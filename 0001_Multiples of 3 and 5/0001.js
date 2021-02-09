@@ -1,6 +1,5 @@
 function findMultiples(max) {
-    var count;
-    count = 0;
+    var count = 0;
     var i;
     for (i = 0; i < max; i += 3) {
         if (!(i % 5 == 0)) {
